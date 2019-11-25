@@ -14,7 +14,7 @@
 
 
 
-<title>新建文本文档 | Hexo</title>
+<title>Reading List | Hexo</title>
 
 
 
@@ -110,11 +110,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">新建文本文档</h1>
+            <h1 class="post-title">Reading List</h1>
             
                 <div class="post-meta">
                     
@@ -132,8 +194,12 @@
         </header>
 
         <div class="post-content">
-            <p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.</p>
-
+            <blockquote>
+<p>“Not a trace of fist or sword will remain, man will die and only his words will remain.”</p>
+<p>​                                  ——Yusuf Khas Hajib,<em>《Qutadghu Bilig》</em></p>
+</blockquote>
+<p>I like to share what I’m reading to keep me motivated.  Below are books I’ve read. Books I’ve especially loved are marked with an asterisk.</p>
+<h1 id="2019"><a href="#2019" class="headerlink" title="2019"></a>2019</h1><h1 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h1><h1 id="in-the-past-∞—2018"><a href="#in-the-past-∞—2018" class="headerlink" title="in the past (∞—2018)"></a>in the past (<em>∞</em>—2018)</h1>
         </div>
 
         
@@ -147,7 +213,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://yoursite.com/2019/11/23/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/">http://yoursite.com/2019/11/23/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/</a></span>
+                        <span><a href="http://yoursite.com/2019/11/23/Reading%20List/">http://yoursite.com/2019/11/23/Reading%20List/</a></span>
                     </p>
                 
                 
