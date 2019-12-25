@@ -16,7 +16,7 @@
 
 
 
-<title>Crash Course Physics Notes | A.A</title>
+<title>Crash Course Study Project | A.A</title>
 
 
 
@@ -112,11 +112,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Crash Course Physics Notes</h1>
+            <h1 class="post-title">Crash Course Study Project</h1>
             
                 <div class="post-meta">
                     
@@ -141,7 +203,34 @@
         </header>
 
         <div class="post-content">
-            <p>10</p>
+            <p>Studying with MOOC</p>
+<hr>
+<ul>
+<li><h1 id="Science-amp-Mathematics"><a href="#Science-amp-Mathematics" class="headerlink" title="Science&amp;Mathematics"></a>Science&amp;Mathematics</h1></li>
+<li><h1 id="Philosophy"><a href="#Philosophy" class="headerlink" title="Philosophy"></a>Philosophy</h1></li>
+<li><input checked="" disabled="" type="checkbox"> <p>Crash Course: Philosophy</p>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>General Philosophy (University of Oxford)</p>
+</li>
+<li><h1 id="Engineering"><a href="#Engineering" class="headerlink" title="Engineering"></a>Engineering</h1></li>
+<li><h1 id="Social-Sciences"><a href="#Social-Sciences" class="headerlink" title="Social Sciences"></a>Social Sciences</h1></li>
+<li><input checked="" disabled="" type="checkbox"> <p>Crash Course: Sociology </p>
+</li>
+<li><h1 id="Health-amp-Well-Being"><a href="#Health-amp-Well-Being" class="headerlink" title="Health&amp;Well-Being"></a>Health&amp;Well-Being</h1></li>
+<li><h1 id="History"><a href="#History" class="headerlink" title="History"></a>History</h1></li>
+<li><input checked="" disabled="" type="checkbox"> <p>Crash Course: World History</p>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>Crash Course: Big History </p>
+</li>
+</ul>
+<ul>
+<li><h1 id="Computer-Science"><a href="#Computer-Science" class="headerlink" title="Computer Science"></a>Computer Science</h1></li>
+<li><h1 id="Music-Art-amp-Design"><a href="#Music-Art-amp-Design" class="headerlink" title="Music, Art&amp;Design"></a>Music, Art&amp;Design</h1></li>
+<li><h1 id="Business-amp-Economics"><a href="#Business-amp-Economics" class="headerlink" title="Business&amp;Economics"></a>Business&amp;Economics</h1></li>
+<li><h1 id="Writing-amp-Literature"><a href="#Writing-amp-Literature" class="headerlink" title="Writing&amp;Literature"></a>Writing&amp;Literature</h1></li>
+<li><h1 id="Languages"><a href="#Languages" class="headerlink" title="Languages"></a>Languages</h1></li>
+<li><h1 id="Ideas-amp-Tools4Education"><a href="#Ideas-amp-Tools4Education" class="headerlink" title="Ideas&amp;Tools4Education"></a>Ideas&amp;Tools4Education</h1></li>
+</ul>
 
         </div>
 
