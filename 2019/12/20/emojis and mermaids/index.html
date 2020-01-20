@@ -339,6 +339,14 @@ crit	关键阶段<br>
 <h1>🐼 ✨ 🐫 💥</h1>
 <p>❤️</p>
 <p>🎓  <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></p>
+<pre class="mermaid">gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+section A section
+Completed task            :done,    des1, 2020-01-2,2020-01-22
+Active task               :active,  des2, 2020-01-22, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d</pre>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line">op=&gt;operation: 操作</span><br><span class="line">sub=&gt;subroutine: 子程序</span><br><span class="line">cond=&gt;condition: 是或者不是?</span><br><span class="line">io=&gt;inputoutput: 输出</span><br><span class="line"></span><br><span class="line">st(right)-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(right)-&gt;e</span><br><span class="line">cond(no)-&gt;sub(right)-&gt;op</span><br></pre></td></tr></table></figure>
 <pre class="mermaid">graph LR
 A["[]矩形"]-->|"-->箭头"|B("（）圆角")
