@@ -16,7 +16,7 @@
 
 
 
-<title>Diary 2019 | A.A Personal Blog</title>
+<title>Fun | A.A Personal Blog</title>
 
 
 
@@ -178,7 +178,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Diary 2019</h1>
+            <h1 class="post-title">Fun</h1>
             
                 <div class="post-meta">
                     
@@ -187,14 +187,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 3, 2019&nbsp;&nbsp;13:45:57</a>
+                        Date: <a href="#">December 20, 2019&nbsp;&nbsp;13:57:23</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/Personal-Diaries/">Personal Diaries</a>
+                                <a href="/categories/Fun/">Fun</a>
                             
                         </span>
                     
@@ -203,14 +203,148 @@
         </header>
 
         <div class="post-content">
-            <h1>Diary · 2019</h1>
-<h2 id="October">October</h2>
-<p><strong>20191004, Shanghai</strong></p>
-<h2 id="December">December</h2>
-<p><strong>20191225，Tianjin</strong></p>
-<p>Today I was busy with work.</p>
-<hr>
-
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">%% Example of sequence diagram
+  sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+    Bob->>Alice: Not so good :(
+    else is well
+    Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+    Bob->>Alice: Thanks for asking
+    end</pre>
+<pre class="mermaid">graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]</pre>
+<pre class="mermaid">pie
+    title Pie 
+    Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150</pre>
+<pre class="mermaid">gantt
+dateFormat YYYY-MM-DD
+section S1
+T1: 2014-01-01, 9d
+section S2
+T2: 2014-01-11, 9d
+section S3
+T3: 2014-01-02, 9d</pre>
+<pre class="mermaid">sequenceDiagram
+A->>B: How are you?
+B->>A: Great!</pre>
+<pre class="mermaid">graph LR
+id[This is the text in the box];</pre>
+<pre class="mermaid">graph LR
+A --- B</pre>
+<pre class="mermaid">graph LR;  
+　　A-->B;    
+　　A-->C;  
+　　B-->D;  
+　　C-->D;</pre>
+<pre class="mermaid">graph LR 
+id1</pre>
+<pre class="mermaid">graph LR
+id[This is the text in the box];</pre>
+<pre class="mermaid">graph LR
+id((This is the text in the circle));</pre>
+<pre class="mermaid">graph LR
+id>This is the text in the box]</pre>
+<pre class="mermaid">graph LR
+id{This is the text in the box}</pre>
+<pre class="mermaid">graph LR;
+  A-->B;</pre>
+<pre class="mermaid">  graph LR
+A --- B;</pre>
+<pre class="mermaid">graph LR
+A -- This is the label text --- B;</pre>
+<pre class="mermaid">graph LR
+A-->|text|B\;</pre>
+<pre class="mermaid">graph LR
+A--text -->B;</pre>
+<pre class="mermaid">graph LR
+ A-- text -->B;</pre>
+<pre class="mermaid">graph LR
+A-.->B;</pre>
+<pre class="mermaid">graph LR
+A-.-.B;</pre>
+<pre class="mermaid">graph LR
+A-.text.->B;</pre>
+<pre class="mermaid">graph LR
+A==>B;</pre>
+<pre class="mermaid">graph LR
+A===B;</pre>
+<pre class="mermaid">graph LR
+A==text==>B;</pre>
+<pre class="mermaid">graph LR
+d1["This is the (text) in the box"]</pre>
+<pre class="mermaid">graph LR
+        A["A double quote:#quot;"]-->B["A dec char:#9829;"]</pre>
+<p>html字符的转义字符</p>
+<pre class="mermaid">graph TB
+        subgraph one
+        a1 --> a2
+        end
+        subgraph two
+        b2 --> b2
+        end
+        subgraph three
+        c1 --> c2
+        end
+        c1 --> a2</pre>
+<p>header 1	header 2<br>
+title	标题<br>
+dateFormat	日期格式<br>
+section	模块<br>
+Completed	已经完成<br>
+Active	当前正在进行<br>
+Future	后续待处理<br>
+crit	关键阶段<br>
+日期缺失	默认从上一项完成后<br>
+————————————————</p>
+<pre class="mermaid">graph TD
+      B["fa:fa-phone for peace"]
+      B-->C[fa:fa-apple apple]
+      B-->D(fa:fa-weixin);
+      B-->E(A fa:fa-dollar perhaps?);</pre>
+<p>fontawsome icons <a href="http://www.fontawesome.com.cn/faicons/" target="_blank" rel="noopener">http://www.fontawesome.com.cn/faicons/</a></p>
+<p><a href="https://www.bootcss.com/p/font-awesome/" target="_blank" rel="noopener">https://www.bootcss.com/p/font-awesome/</a></p>
+<pre class="mermaid">graph LR
+     id1(Start)-->id2(Stop)
+     style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray:5,5;</pre>
+<pre class="mermaid">graph LR
+      A-->B[AAABBB];
+      B-->D;
+      class A cssClass;</pre>
+<pre class="mermaid">graph LR
+    classDef default fill:#f90,stroke:#555,stroke-width:4px;
+    id1(Start)-->id2(Stop)</pre>
+<pre class="mermaid">sequenceDiagram
+　　Alice->>John: Hello John, how are you ?
+　　John-->>Alice: Great!
+　　Alice->>John: Hung,you are better .
+　　John-->>Alice: yeah, Just not bad.</pre>
+<pre class="mermaid">　　sequenceDiagram
+    Alice-->John: Hello John, how are you ?
+    John-->Alice: Great!
+    Alice->>John: dont borther me !
+    John-->>Alice: Great!</pre>
+<p>:fa-cab:</p>
+<h1>🐼 ✨ 🐫 💥</h1>
+<p>❤️</p>
+<p>🎓  <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener">https://www.webfx.com/tools/emoji-cheat-sheet/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line">op=&gt;operation: 操作</span><br><span class="line">sub=&gt;subroutine: 子程序</span><br><span class="line">cond=&gt;condition: 是或者不是?</span><br><span class="line">io=&gt;inputoutput: 输出</span><br><span class="line"></span><br><span class="line">st(right)-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(right)-&gt;e</span><br><span class="line">cond(no)-&gt;sub(right)-&gt;op</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph LR
+A["[]矩形"]-->|"-->箭头"|B("（）圆角")
+B---|"---连线"|C(("双(())圆形"))
+C==>|==粗线|D{"{}菱形"}
+C-->E>">]为非对称"]</pre>
         </div>
 
         
@@ -247,10 +381,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2019/12/03/Crash%20Course%20Study%20Project/">MOOC Study Projects</a>
+                <a class="prev" rel="prev" href="/2019/12/20/emojis%20and%20mermaids/">Emojis and Mermaids</a>
             
             
-            <a class="next" rel="next" href="/2019/12/03/MOOC%20Study%20Projects/">MOOC Study Projects</a>
+            <a class="next" rel="next" href="/2019/12/20/post/">post</a>
             
         </section>
 
