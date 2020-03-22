@@ -245,26 +245,21 @@
             <table>
 <thead>
 <tr>
-<th style="text-align:center">书名</th>
-<th style="text-align:center">香农传：从0到1开创信息时代</th>
+<th style="text-align:center">书名：香农传：从0到1开创信息时代</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">作者</td>
-<td style="text-align:center">[美]吉米·索尼&amp;罗伯·古德曼</td>
+<td style="text-align:center">作者：[美]吉米·索尼&amp;罗伯·古德曼</td>
 </tr>
 <tr>
-<td style="text-align:center">出版社</td>
-<td style="text-align:center">中信出版集团出版</td>
+<td style="text-align:center">出版社 ：中信出版集团出版</td>
 </tr>
 <tr>
-<td style="text-align:center">出版时间</td>
-<td style="text-align:center">2019-02</td>
+<td style="text-align:center">出版时间：2019-02</td>
 </tr>
 <tr>
-<td style="text-align:center">ISBN</td>
-<td style="text-align:center">9787508694801</td>
+<td style="text-align:center">ISBN  ：9787508694801</td>
 </tr>
 </tbody>
 </table>
@@ -515,8 +510,7 @@ id[Computing Device +Shannon=Thinking Device];</pre>
 <p>香农可以说是第一个将人类基因视为信息载体的人，这一充满想象的飞跃消除了机械、电子和生物信息之间的界限。</p>
 </blockquote>
 <pre class="mermaid">graph LR;  
-　　DNA需要修复--编码转录-->信使RNA--移动-->蛋白质合成处-->氨基酸-蛋白质构件--氨基酸合到蛋白质-->DNA得修复;  
-　　RNA编码出错--点突变-->蛋白质合成处;  
+　　DNA需要修复--编码转录-->信使RNA+RNA编码出错--移动和点突变-->蛋白质合成处-->氨基酸-蛋白质构件--氨基酸合到蛋白质-->DNA得修复;   
    class A cssClass;</pre>
 <blockquote>
 <p>首先，香农认为，信息科学仍然未能发现对信息至关重要的东西——概率的本质。</p>
@@ -580,20 +574,20 @@ $$</p>
 比如，我们想发送字母A和D的组成，我们更关心信息被压缩，更关心信息安全通过信道。我们可以从最基本的代码开始：</p>
 </blockquote>
 <p>$$<br>
-A=10\<br>
-B=01\<br>
-C=10\<br>
-D=11<br>
+A=10\</p>
+<p>B=01\</p>
+<p>C=10\</p>
+<p>D=11<br>
 $$</p>
 <blockquote>
 <p>这种情况下单个比特出错是致命的。<br>
 但是正如人类语言直观地、自主地解决了同样的问题，我们可以通过增加比特解决这种故障。我们可以使用如下的代码</p>
 </blockquote>
 <p>$$<br>
-A = 00000\<br>
-B = 00111\<br>
-C = 11100\<br>
-D = 11011<br>
+A = 00000\</p>
+<p>B = 00111\</p>
+<p>C = 11100\</p>
+<p>D = 11011<br>
 $$</p>
 <p>现在任何字母即使对任意比特造成了损伤，也可以被识别而不至于被误会成其他字母。假使出现两个错误，事实可能就会变得模糊不清，比如00011既可能是出现了一个故障的B，也可能是出现了两个故障的A。但是要出现3个错误，才可能使一个字母完全变为另一个字母。新代码相比于老代码更能抵抗噪声，要比简单的重复更有效率。我们并未强制要求通信媒介做出任何改变，不需要在拥挤的房间里大声叫嚷，不需要将火花线圈绑在电报上，也不需要将电视信号向天空发射两次。我们只需要<strong>更智能的信号</strong>。</p>
 <blockquote>
