@@ -479,17 +479,11 @@ id[Computing Device +Shannon=Thinking Device];</pre>
 <p>◆ 第16章 信息论炸弹</p>
 <blockquote>
 <p>通信的根本问题在于将选择过的信息从一个点精确地或者近乎精确地在另一个点重现。</p>
+<p><a href="https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFI7ICBcbuOAgOOAgFNlbnQtLUVuY29kaW5nLS0-RW1pc3Npb24tLVNpZ25hbC0tPk1lZGl1bS0tPlJlY2VpdmUtLURlY29kaW5nLS0-UmVjZWl2ZWQ7ICBcbuOAgOOAgERpc3R1cmJhbmNlLS1TaWduYWwtLT5NZWRpdW07ICAgXG7jgIDjgIAgY2xhc3MgQSBjc3NDbGFzczsiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" target="_blank" rel="noopener"><img src="https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFI7ICBcbuOAgOOAgFNlbnQtLUVuY29kaW5nLS0-RW1pc3Npb24tLVNpZ25hbC0tPk1lZGl1bS0tPlJlY2VpdmUtLURlY29kaW5nLS0-UmVjZWl2ZWQ7ICBcbuOAgOOAgERpc3R1cmJhbmNlLS1TaWduYWwtLT5NZWRpdW07ICAgXG7jgIDjgIAgY2xhc3MgQSBjc3NDbGFzczsiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" alt></a></p>
 </blockquote>
-<pre class="mermaid">graph LR;  
-　　Sent--Encoding-->Emission--Signal-->Medium-->Receive--Decoding-->Received;  
-　　Disturbance--Signal-->Medium;   
-　　 class A cssClass;</pre>
 <blockquote>
 <p>香农可以说是第一个将人类基因视为信息载体的人，这一充满想象的飞跃消除了机械、电子和生物信息之间的界限。</p>
 </blockquote>
-<pre class="mermaid">graph LR;  
-　　DNA需要修复--编码转录-->信使RNA+RNA编码出错--移动和点突变-->蛋白质合成处-->氨基酸-蛋白质构件--氨基酸合到蛋白质-->DNA得修复;   
-   class A cssClass;</pre>
 <blockquote>
 <p>首先，香农认为，信息科学仍然未能发现对信息至关重要的东西——概率的本质。</p>
 </blockquote>
@@ -552,20 +546,20 @@ $$</p>
 比如，我们想发送字母A和D的组成，我们更关心信息被压缩，更关心信息安全通过信道。我们可以从最基本的代码开始：</p>
 </blockquote>
 <p>$$<br>
-A=10\</p>
-<p>B=01\</p>
-<p>C=10\</p>
-<p>D=11<br>
+A=10,<br>
+B=01,<br>
+C=10,<br>
+D=11<br>
 $$</p>
 <blockquote>
 <p>这种情况下单个比特出错是致命的。<br>
 但是正如人类语言直观地、自主地解决了同样的问题，我们可以通过增加比特解决这种故障。我们可以使用如下的代码</p>
 </blockquote>
 <p>$$<br>
-A = 00000\</p>
-<p>B = 00111\</p>
-<p>C = 11100\</p>
-<p>D = 11011<br>
+A = 00000,<br>
+B = 00111,<br>
+C = 11100,<br>
+D = 11011<br>
 $$</p>
 <p>现在任何字母即使对任意比特造成了损伤，也可以被识别而不至于被误会成其他字母。假使出现两个错误，事实可能就会变得模糊不清，比如00011既可能是出现了一个故障的B，也可能是出现了两个故障的A。但是要出现3个错误，才可能使一个字母完全变为另一个字母。新代码相比于老代码更能抵抗噪声，要比简单的重复更有效率。我们并未强制要求通信媒介做出任何改变，不需要在拥挤的房间里大声叫嚷，不需要将火花线圈绑在电报上，也不需要将电视信号向天空发射两次。我们只需要<strong>更智能的信号</strong>。</p>
 <blockquote>
