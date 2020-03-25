@@ -16,7 +16,7 @@
 
 
 
-<title>Translations:Popular Mathematics | A.A Personal Blog</title>
+<title>Nobel Minds | A.A Personal Blog</title>
 
 
 
@@ -112,11 +112,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Translations:Popular Mathematics</h1>
+            <h1 class="post-title">Nobel Minds</h1>
             
                 <div class="post-meta">
                     
@@ -125,14 +187,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 4, 2019&nbsp;&nbsp;0:11:10</a>
+                        Date: <a href="#">March 24, 2020&nbsp;&nbsp;19:49:13</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/Scientific-Writings-Translations/">Scientific Writings & Translations</a>
+                                <a href="/categories/Nobel-Minds/">Nobel Minds</a>
                             
                         </span>
                     
@@ -141,16 +203,30 @@
         </header>
 
         <div class="post-content">
-            <p><a href="http://duodaa.com/" target="_blank" rel="noopener">哆嗒数学网：一个妙趣的数学世界</a></p>
+            <h1>Nobel Minds-Nobel Prize Conversations</h1>
+<p><a href="https://www.nobelprize.org/" target="_blank" rel="noopener">Nobel Prize Website</a></p>
+<p><a href="https://play.acast.com/s/nobelprizeconversations" target="_blank" rel="noopener">Nobel Prize Conversations</a></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1es411w7gW?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2013</a></li>
+<li><a href="https://www.bilibili.com/video/BV13s411w7Dp?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2014</a></li>
+<li><a href="https://www.bilibili.com/video/BV1cs411w7Ec?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2015</a></li>
+<li><a href="https://www.bilibili.com/video/BV1qs411P7X7?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2016</a></li>
+<li><a href="https://www.bilibili.com/video/BV1cp411o7h9?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel  Minds 2017</a></li>
+<li><a href="https://www.bilibili.com/video/BV1dt411x7iW?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2018</a></li>
+<li>Nobel Minds 2019</li>
+</ul>
 <hr>
-<p>1.我们人类能在四维空间里活下去吗？</p>
-<p><a href="http://duodaa.com/blog/index.php/archives/1656/" target="_blank" rel="noopener">http://duodaa.com/blog/index.php/archives/1656/</a></p>
-<p>2.八卦新晋菲尔兹：难民、分居、怕小孩、得奖像玩</p>
-<p><a href="http://duodaa.com/blog/index.php/archives/1537/" target="_blank" rel="noopener">http://duodaa.com/blog/index.php/archives/1537/</a></p>
-<p>3.2018数学最高奖菲尔兹奖公布！</p>
-<p><a href="http://duodaa.com/blog/index.php/archives/1531/" target="_blank" rel="noopener">http://duodaa.com/blog/index.php/archives/1531/</a></p>
-<p>4.话说，在网上玩直播的是不是都应该感谢他？</p>
-<p><a href="http://duodaa.com/blog/index.php/archives/1440/" target="_blank" rel="noopener">http://duodaa.com/blog/index.php/archives/1440/</a></p>
+<p>2017:  rationality, behavioral economics, nudging, probabilistic reasoning &amp; education, body clocks, seeing atoms,  personal interest &amp; success, misuse of science, how to explain &amp; use the great things discovered, “Never Let me Go”, writing &amp; discovering, zombie attack vs global issues, disconnected between discovery literature, sci-fi &amp; LIGO, science faction, science fantasy, investing in science, media &amp; popular science, business model of media is broken &amp; failing to provide the Truth</p>
+<blockquote>
+<p>My life wasn’t dedicated to winning a prize…, I enjoyed what I did. You do things you get kick out off, and sometimes it turns out to be important. - Rainer Weiss</p>
+</blockquote>
+<blockquote>
+<p>There is no alternative to nudging, the only alternative is bad nudging.</p>
+<p>-Richard H. Thaler</p>
+</blockquote>
+<blockquote>
+<p>99% failed effort might result in 1% success,personal interest will help you get through difficulty,  that will worth it.  -Michael Rosbass</p>
+</blockquote>
 
         </div>
 
@@ -178,6 +254,10 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/People/"># People</a>
+                    
+                        
                 </span>
             </div>
             <div>
@@ -188,10 +268,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2019/12/20/post/">post</a>
             
-            
-            <a class="next" rel="next" href="/2019/12/03/MOOC%20Study%20Projects/">MOOC Study Projects</a>
+            <a class="next" rel="next" href="/2020/02/24/A%20Mind%20at%20Play%EF%BC%9A%20Claude%20Shannon/">A Mind at Play： Claude Shannon</a>
             
         </section>
 
