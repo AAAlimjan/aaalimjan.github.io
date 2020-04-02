@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Alimjan">
+
+
+    <meta name="subtitle" content="Blog">
+
+
+    <meta name="description" content="Alimjan">
+
+
+
+<title>About | A.A Personal Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">A Personal Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/Reading">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">A Personal Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/Reading">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">About</h2>
+        
+        <section class="post-content">
+            <h1>A.ALIMJAN</h1>
+<p>Born in March 14, 1993.</p>
+<h2 id="Interests">Interests</h2>
+<ul>
+<li>Information flow/Maxell’s demon in Quantum &amp; Thermodynamical processes;</li>
+<li>Nature of scientific research &amp; implications of AI/ML in scientific research process;</li>
+</ul>
+<h2 id="Papers-Articles-Translations">Papers / Articles/ Translations</h2>
+<ul>
+<li>List of articles I translated (between English, Chinese)</li>
+</ul>
+<h2 id="Miscellany">Miscellany</h2>
+<ul>
+<li>
+<p>I like to meet new people with ideas. If you want to ask or share anything please  just <em><a href="mailto:alimjanabla@hotmail.com" target="_blank" rel="noopener">E-mail me</a>.</em></p>
+</li>
+<li>
+<p>I love music,  I collect my favorite music on <em><a href="https://music.163.com/#/user/home?id=126994034" target="_blank" rel="noopener">NETEASE Music</a>.</em></p>
+</li>
+<li>
+<p>I am keeping a <em><a href="http://icity.ly/u/aaalim314" target="_blank" rel="noopener">Diary</a></em> in iCity.</p>
+</li>
+<li>
+<p>I love reading, my reading list is <em><a href="https://aaalimjan.github.io/Reading-List/" target="_blank" rel="noopener">Here</a>.</em></p>
+</li>
+<li>
+<p>I am a lifelong learner, in my free time I take online classes, my courses are <em><a href="https://aaalimjan.github.io/Study-Projects/" target="_blank" rel="noopener">Here</a>.</em></p>
+</li>
+</ul>
+<p><em>My rough CV is as follows:</em></p>
+<p><strong>Work :</strong></p>
+<p><strong>2017.12–Now:</strong></p>
+<ul>
+<li>Student Counselor, at Student Office of Tianjin Vocational Institute,Tianjin</li>
+</ul>
+<p><strong>2017.7–2017.11:</strong></p>
+<ul>
+<li>Science &amp; Mathematics Instructor , INTIL Education &amp; Training School</li>
+</ul>
+<p>​<strong>Education:</strong></p>
+<p><s>2017.9-2019.12**:</s></p>
+<p><s>Graduate Student, Energy Engineering, Sapienza Università di Roma</s></p>
+<p><strong>2013.9–2017.6:</strong></p>
+<p>Undergraduate, focusing Energy &amp; Power Engineering at Tianjin University of Technology, Tianjin</p>
+<p><strong>2009.8-2013.9</strong></p>
+<p>Natural Sciences Student, The Affiliated High School to Hangzhou Normal University, Hangzhou</p>
+
+        </section>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Alimjan</span>
+    </div>
+</footer>
+
+  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+
+    </div>
+</body>
+</html>
