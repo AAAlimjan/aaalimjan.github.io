@@ -122,4 +122,6 @@
 .icon-github:before {
   content: "\e88d";
 }
-
+.icon-stack-exchange:before {
+  content: "\f18d";
+}
