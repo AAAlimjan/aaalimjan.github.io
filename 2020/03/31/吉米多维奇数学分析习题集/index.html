@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Alimjan">
+
+
+    <meta name="subtitle" content="Blog">
+
+
+    <meta name="description" content="A">
+
+
+
+<title>吉米多维奇数学分析习题集 | A.A</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+            <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+        
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">A Personal Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/Reading-List">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">A Personal Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/Reading-List">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">吉米多维奇数学分析习题集</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Alimjan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 31, 2020&nbsp;&nbsp;19:54:58</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Textbook-Notes/">Textbook Notes</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <ul>
+<li>
+<h2 id="第一章-分析引论">第一章 分析引论</h2>
+<p>§ １ ．　 实数</p>
+<p>§ ２ ．　 叙列的理论</p>
+<p>§ ３ ．　 函数的概念</p>
+<p>§ ４ ．　 函数的图形表示法</p>
+<p>§ ５ ．　 函数的极限</p>
+<p>§ ６ ．　 函数无穷小和无穷大的阶</p>
+<p>§ ７ ．　 函数的连续性</p>
+<p>§ ８ ．　 反函数 ，用参数表示的函数</p>
+<p>§ ９ ．　 函数的一致连续性</p>
+<p>§ １０ ． 函数方程</p>
+</li>
+<li>
+<h2 id="第二章-单变量函数的微分学">第二章 单变量函数的微分学</h2>
+<p>§ １ ．　 显函数的导函数</p>
+<p>§ ２ ．　 反函数的导函数 ，用参变数表示的函数的导函数，隐函数的导函数</p>
+<p>§ ３ ．　 导函数的几何意义</p>
+<p>§ ４ ．　 函数的微分</p>
+<p>§ ５ ．　 高阶的导函数和微分</p>
+<p>§ ６ ．　 洛尔 、拉格朗日及哥西定理</p>
+<p>§ ７ ．　 函数的增大与减小 ，不等式</p>
+<p>§ ８ ．　 凹凸性 ，拐点</p>
+<p>§ ９ ．　 未定形的求值法</p>
+<p>§ １０ ． 台劳公式</p>
+<p>§ １１ ． 函数的极值 ．函数的最大值和最小值</p>
+<p>§ １２ ． 依据函数的特征点作函数图形</p>
+<p>§ １３ ． 函数的极大值与极小值问题</p>
+<p>§ １４ ． 曲线的相切 ．曲率圆 ．渐屈线</p>
+<p>§ １５ ． 方程的近似解法</p>
+</li>
+<li>
+<h2 id="第三章-不定积分">第三章 不定积分</h2>
+<p>§ １ ．　 最简单的不定积分</p>
+<p>§ ２ ．　 有理函数的积分法</p>
+<p>§ ３ ．　 无理函数的积分法</p>
+<p>§ ４ ．　 三角函数的积分法</p>
+<p>§ ５ ．　 各种超越函数的积分法</p>
+<p>§ ６ ．　 函数的积分法的各种例子</p>
+</li>
+<li>
+<h2 id="第四章-定积分">第四章 定积分</h2>
+<p>§ １ ．　 定积分作为和的极限</p>
+<p>§ ２ ．　 利用不定积分计算定积分的方法</p>
+<p>§ ３ ．　 中值定理</p>
+<p>§ ４ ．　 广义积分</p>
+<p>§ ５ ．　 面积的计算法</p>
+<p>§ ６ ．　 弧长的计算法</p>
+<p>§ ７ ．　 体积的计算法</p>
+<p>§ ８ ．　 旋转曲面表面积的计算法</p>
+<p>§ ９ ．　 矩的计算法 ．重心的坐标</p>
+<p>§ １０ ． 力学和物理学中的问题</p>
+<p>§ １１ ． 定积分的近似计算法</p>
+</li>
+<li>
+<h2 id="第五章-级数">第五章 级数</h2>
+<p>§ １ ．　 数项级数 ．同号级数收敛性的判别法</p>
+<p>§ ２ ．　 变号级数收敛性的判别法</p>
+<p>§ ３ ．　 级数的运算</p>
+<p>§ ４ ．　 函数项级数</p>
+<p>§ ５ ．　 幂级数</p>
+<p>§ ６ ．　 福里叶级数</p>
+<p>§ ７ ．　 级数求和法</p>
+<p>§ ８ ．　 利用级数求定积分之值</p>
+<p>§ ９ ．　 无穷乘积</p>
+<p>§ １０ ． 斯特林格公式</p>
+<p>§ １１ ． 用多项式逼近连续函数</p>
+</li>
+<li>
+<h2 id="第六章-多变量函数的微分法">第六章 多变量函数的微分法</h2>
+<p>§ １ ．　 多变量函数的极限 ．连续性</p>
+<p>§ ２ ．　 偏导函数 ．多变量函数的微分</p>
+<p>§ ３ ．　 隐函数的微分法</p>
+<p>§ ４ ．　 变量代换</p>
+<p>§ ５ ．　 几何上的应用</p>
+<p>§ ６ ．　 台劳公式</p>
+<p>§ ７ ．　 多变量函数的极值</p>
+</li>
+<li>
+<h2 id="第七章-带参数的积分">第七章 带参数的积分</h2>
+<p>§ １ ．带参数的常义积分</p>
+<p>§ ２ ．带参数的广义积分，积分的一致收敛性</p>
+<p>§ ３ ．广义积分中的变量代换，广义积分号下的微分法及积分法</p>
+<p>§ ４ ．尤拉积分</p>
+<p>§ ５ ．福里叶积分公式</p>
+</li>
+<li>
+<h2 id="第8章：重积分和曲线积分">第8章：重积分和曲线积分</h2>
+<p>§ １ ．　 二重积分</p>
+<p>§ ２ ．　 面积的计算法</p>
+<p>§ ３ ．　 体积的计算法</p>
+<p>§ ４ ．　 曲面面积计算法</p>
+<p>§ ５ ．　 二重积分在力学上的应用</p>
+<p>§ ６ ．　 三重积分</p>
+<p>§ ７ ．　 利用三重积分计算体积法</p>
+<p>§ ８ ．　 三重积分在力学上的应用</p>
+<p>§ ９ ．　 二重和三重广义积分</p>
+<p>§ １０ ． 多重积分</p>
+<p>§ １１ ． 曲线积分</p>
+<p>§ １２ ． 格林公式</p>
+<p>§ １３ ． 曲线积分的物理应用</p>
+<p>§ １４ ． 曲面积分</p>
+<p>§ １５ ． 斯托克斯公式</p>
+<p>§ １６ ． 奥斯特洛格拉德斯基公式</p>
+<p>§ １７ ． 场论初步</p>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Alimjan</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Mathematics/"># Mathematics</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/04/05/Crash%20Course%20Philosophy%20Notes/">Crash Course Philosophy Notes</a>
+            
+            
+            <a class="next" rel="next" href="/2020/03/28/Justice%20What%E2%80%99s%20the%20Right%20Thing%20to%20Do/">Justice—What is the Right Thing to Do</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Alimjan</span>
+    </div>
+</footer>
+
+  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+
+    </div>
+</body>
+</html>
