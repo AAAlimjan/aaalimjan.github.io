@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Alimjan">
+
+
+    <meta name="subtitle" content="personal blog">
+
+
+    <meta name="description" content="A">
+
+
+
+<title>Nobel Minds | alimjan の blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">A Personal Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/Reading-List">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">A Personal Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/Reading-List">Reading</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Nobel Minds</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Alimjan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 24, 2020&nbsp;&nbsp;19:49:13</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Nobel-Minds/">Nobel Minds</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1>Nobel Minds—Nobel Prize Conversations</h1>
+<p><a href="https://www.nobelprize.org/" target="_blank" rel="noopener">Nobel Prize Website</a></p>
+<p><a href="https://play.acast.com/s/nobelprizeconversations" target="_blank" rel="noopener">Nobel Prize Conversations</a></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1es411w7gW?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2013</a></li>
+<li><a href="https://www.bilibili.com/video/BV13s411w7Dp?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2014</a></li>
+<li><a href="https://www.bilibili.com/video/BV1cs411w7Ec?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2015</a></li>
+<li><a href="https://www.bilibili.com/video/BV1qs411P7X7?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2016</a></li>
+<li><a href="https://www.bilibili.com/video/BV1cp411o7h9?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel  Minds 2017</a></li>
+<li><a href="https://www.bilibili.com/video/BV1dt411x7iW?from=search&amp;seid=13444280743146493291" target="_blank" rel="noopener">Nobel Minds 2018</a></li>
+<li>Nobel Minds 2019</li>
+<li><a href="https://www.bilibili.com/video/BV17z4y1C7xS" target="_blank" rel="noopener">Nobel Minds 2020</a></li>
+<li><a href="https://www.bilibili.com/video/BV17z4y1C7xS" target="_blank" rel="noopener">Nobel Minds(2013-2020)</a></li>
+</ul>
+<hr>
+<p>2017:  rationality, behavioral economics, nudging, probabilistic reasoning &amp; education, body clocks, seeing atoms,  personal interest &amp; success, misuse of science, how to explain &amp; use the great things discovered, “Never Let me Go”, writing &amp; discovering, zombie attack vs global issues, disconnected between discovery literature, sci-fi &amp; LIGO, science faction, science fantasy, investing in science, media &amp; popular science, business model of media is broken &amp; failing to provide the Truth</p>
+<blockquote>
+<p>My life wasn’t dedicated to winning a prize…, I enjoyed what I did. You do things you get kick out off, and sometimes it turns out to be important. - Rainer Weiss</p>
+</blockquote>
+<blockquote>
+<p>There is no alternative to nudging, the only alternative is bad nudging.</p>
+<p>-Richard H. Thaler</p>
+</blockquote>
+<blockquote>
+<p>99% failed effort might result in 1% success,personal interest will help you get through difficulty,  that will worth it.  -Michael Rosbass</p>
+</blockquote>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Alimjan</span>
+                    </p>
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/People/"># People</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/03/28/Justice%20What%E2%80%99s%20the%20Right%20Thing%20to%20Do/">Justice—What is the Right Thing to Do</a>
+            
+            
+            <a class="next" rel="next" href="/2020/02/24/A%20Mind%20at%20Play-Claude%20Shannon/">A Mind at Play： Claude Shannon</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Alimjan</span>
+    </div>
+</footer>
+
+  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+
+    </div>
+</body>
+</html>
