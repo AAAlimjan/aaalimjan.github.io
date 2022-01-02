@@ -459,7 +459,9 @@ input[type="radio"]:not(:checked) + label:after {
   content: "\e88d";
 }
 
-
+.icon-stackexchange:before {
+  content: "\ec1c";
+}
 .header-logo a {
   padding: 0;
 }
